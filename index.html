@@ -76,21 +76,23 @@
                 </div>
             </div>
             <div class="col-md-12">
-            <table class="table table-bordered">
+            <table class="table table-bordered" id="ShoppingTable" onload="loadusertable()">
                 <thead>
                     <tr>
-                        <th></th><th>Item</th><th>Quantity</th><th>Store</th><th>Section</th><th>Price</th>
+                        <th></th><th onclick="sortByCol(0)">Item</th><th onclick="sortByCol(1)">Quantity</th><th onclick="sortByCol(2)">Store</th><th onclick="sortByCol(3)">Section</th><th onclick="sortByCol(4)">Price</th>
                     </tr>
                 </thead>
                 <tbody id="shoppinglist"></tbody>
             </table>
             </div>
         </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/model.js?x=2" type="text/javascript"></script>
-        <script src="js/view.js?x=2" type="text/javascript"></script>
-        <script src="js/controller.js?x=2" type="text/javascript"></script>
+        <script src="js/model.js?x=2" type=text/javascript></script>
+        <script src="js/view.js?x=2" type=text/javascript></script>     
+        <script src="js/savelocal.js?x=2" type=text/javascript></script>     
         <script src="js/shopping.js?x=2" type=text/javascript></script>
+    
     </body>
 </html>
