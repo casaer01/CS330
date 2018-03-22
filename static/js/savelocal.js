@@ -7,6 +7,7 @@ class LocalStorageSaver {
         model.subscribe(function(slist, msg) {
             self.saveAll(slist)            
         })
+        
         // now restore from localstorage
         let restore_list = JSON.parse(localStorage.getItem(self.lsname))
         for(let vals of restore_list) {
